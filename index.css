@@ -1,0 +1,366 @@
+html {
+  font-family: sans-serif;
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration:none;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.centerBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeBody {
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("images/background.jpg");
+}
+
+.homeHeader {
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.homeHeaderButton {
+  border:none;
+  background-color: transparent;
+  outline: none;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.homeHeaderButton:hover {
+  transition: 0.2s;
+  color: yellow;
+}
+
+.homeHeaderButtonBlack {
+  color: black;
+}
+
+.homeHeaderButtonBlack:hover {
+  color: #50a6ea;
+}
+
+.headerButton {
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #464646;
+  cursor: pointer;
+}
+
+.headerButton:hover {
+  transition: 0.2s;
+  color: #eaba00;
+}
+
+.homeMoreButton {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  height: 40px;
+  width: 120px;
+  border: 2px solid white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.homeMoreButton:hover{
+  background-color: white;
+  color: #4c331d;
+}
+
+.homeContent {
+  height: 100%;
+  font-weight: 500;
+  font-size: 80px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.profileBody{
+  display: flex;
+  justify-content: center;
+  color: #464646;
+  height: 80%;
+  width: 100%;
+  background-color: white;
+}
+
+.profileContent{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+}
+
+.profileText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profileTitle{
+  font-size: 80px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.profileSubtext{
+  font-size: 34px;
+  font-weight: 300;
+}
+
+.profileImage{
+  flex-shrink: 0;
+  height: 100%;
+  width: 420px;
+  margin-left: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/profile.png");
+}
+
+.skillsBody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #464646;
+  height: 80%;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.skillsContent{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.skillsChunk{
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22%;
+  color: black;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 300;
+
+}
+
+.skillsIcon{
+  flex-shrink: 1;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px #afafaf;
+
+}
+
+.skillsLabel{
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.educationBody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #464646;
+  height: 80%;
+  width: 100%;
+  background-color: white;
+}
+
+.educationLabel{
+  color: #50a6ea;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.educationSub{
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.portfolioContent{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.portfolioFrame{
+  cursor: pointer;
+  flex-shrink: 1;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: auto;
+  background-color: white;
+  transition: 0.2s;
+  box-shadow: 0px 0px 20px #c6c6c6;
+}
+.portfolioFrame:hover{
+  opacity: 0.6;
+}
+
+.portfolioImage{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  width: 380px;
+  height: auto;
+  box-shadow: 0px 0px 6px #e0e0e0;
+}
+
+.portfolioText{
+  color: #464646;
+  width: 360px;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.projectBody{
+  width: 100%;
+  color: #464646;
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.projectBody2{
+  width: 70%;
+  color: #464646;
+  margin-top: 60px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 200;
+}
+
+.projectChunk{
+  width: 400px;
+  margin-right: 10%;
+}
+
+.projectImage{
+  width: 400px;
+  height: 200px;
+  box-shadow: 0px 0px 12px #e0e0e0;
+
+}
+
+.projectTitle{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.projectInfo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.projectLink{
+  transition:0.2s;
+}
+
+.projectLink:hover{
+  opacity: 0.6;
+}
+
+.footerBody{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  height: 300px;
+  background-image: url("images/background.jpg");
+}
+
+.contactButton {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  height: 50px;
+  width: 160px;
+  border: 2px solid white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contactButton:hover{
+  background-color: white;
+  color: #4c331d;
+}
