@@ -168,8 +168,15 @@ body {
   background-color: #f7f7f7;
 }
 
-.expand {
-  height: 1200px;
+.expandedBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #464646;
+  width: 100%;
+  background-color: #f7f7f7;
+  height: 130%;
 }
 
 .skillsContent{
