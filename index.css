@@ -168,6 +168,10 @@ body {
   background-color: #f7f7f7;
 }
 
+.expand {
+  height: 130%;
+}
+
 .skillsContent{
   margin-top: 30px;
   display: flex;
