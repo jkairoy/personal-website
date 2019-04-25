@@ -34,7 +34,7 @@ body {
 
 .homeHeader {
   z-index: 1;
-  width: 100%;
+  width: 900px;
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -118,7 +118,7 @@ body {
   display: flex;
   justify-content: center;
   color: #464646;
-  height: 80%;
+  height: 720px;
   width: 100%;
   background-color: white;
 }
@@ -163,7 +163,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #464646;
-  height: 80%;
+  height: 720px;
   width: 100%;
   background-color: #f7f7f7;
 }
@@ -176,7 +176,7 @@ body {
   color: #464646;
   width: 100%;
   background-color: #f7f7f7;
-  height: 130%;
+  height: 1170px;
 }
 
 .skillsContent{
