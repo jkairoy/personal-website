@@ -313,9 +313,8 @@ body {
 
 .projectImage{
   width: 400px;
-  height: 200px;
+  height: auto;
   box-shadow: 0px 0px 12px #e0e0e0;
-
 }
 
 .projectTitle{
@@ -357,6 +356,7 @@ body {
 }
 
 .contactButton {
+  color: white;
   display: flex;
   cursor: pointer;
   justify-content: center;
