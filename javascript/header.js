@@ -1,6 +1,6 @@
 $(window).scroll(function() {
 var yPos = window.pageYOffset;
-var yPoint = 870;
+var yPoint = 899;
 if(yPos > yPoint) {
    $(".homeHeaderButton").addClass("homeHeaderButtonBlack");
    $(".homeHeader").css("background-color","white");

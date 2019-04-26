@@ -385,6 +385,10 @@ body {
   background: none;
   outline: none;
   border: none;
+  transition: 0.1s;
+}
+.plaintextButton:hover {
+  opacity: 0.8;
 }
 
 .socialButton {
@@ -392,5 +396,8 @@ body {
   width: 30px;
   margin-left: 5px;
   margin-right: 5px;
-
+  transition: 0.1s;
+}
+.socialButton:hover {
+  opacity: 0.8;
 }
