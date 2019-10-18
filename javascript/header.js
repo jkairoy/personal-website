@@ -32,7 +32,7 @@ $(document).ready(function (){
     });
 });
 $(document).ready(function (){
-    $("#button3").click(function (){
+    $("#button5").click(function (){
         $('html, body').animate({
             scrollTop: $("#skills").offset().top
         }, 400);
@@ -46,9 +46,16 @@ $(document).ready(function (){
     });
 });
 $(document).ready(function (){
-    $("#button5").click(function (){
+    $("#button3").click(function (){
         $('html, body').animate({
             scrollTop: $("#portfolio").offset().top
+        }, 400);
+    });
+});
+$(document).ready(function (){
+    $("#button6").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#classes").offset().top
         }, 400);
     });
 });

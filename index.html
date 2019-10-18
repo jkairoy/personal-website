@@ -1,349 +1,288 @@
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="javascript/typewriter.js"></script>
+<script src="javascript/header.js"></script>
 <script type="text/javascript">
-$(window).scroll(function() {
-var yPos = window.pageYOffset;
-var yPoint = 899;
-if(yPos > yPoint) {
-   $(".homeHeaderButton").addClass("homeHeaderButtonBlack");
-   $(".homeHeader").css("background-color","white");
-} else {
-   $(".homeHeaderButton").removeClass("homeHeaderButtonBlack");
-   $(".homeHeader").css("background-color","transparent");
- }
-});
-
-$(document).ready(function (){
-    $("#moreButton").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#profile").offset().top
-        }, 300);
-    });
-});
-$(document).ready(function (){
-    $("#button1").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#home").offset().top
-        }, 400);
-    });
-});
-$(document).ready(function (){
-    $("#button2").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#profile").offset().top
-        }, 400);
-    });
-});
-$(document).ready(function (){
-    $("#button5").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#skills").offset().top
-        }, 400);
-    });
-});
-$(document).ready(function (){
-    $("#button4").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#education").offset().top
-        }, 400);
-    });
-});
-$(document).ready(function (){
-    $("#button3").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#portfolio").offset().top
-        }, 400);
-    });
-});
-$(document).ready(function (){
-    $("#button6").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#classes").offset().top
-        }, 400);
-    });
-});
-
-
-
-
 </script>
-  <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title> John Roy </title>
-    <link rel="icon" type="image/png" href="images/profileclose.png">
-  </head>
-  <body>
-    <div class="homeBody" id="home">
-      <div class="staticBackground"/>
-        <div class="homeHeader">
-          <button class="homeHeaderButton" id="button1">
-            HOME
-          </button>
-          <button class="homeHeaderButton" id="button2">
-            PROFILE
-          </button>
-          <button class="homeHeaderButton" id="button3">
-            PORTFOLIO
-          </button>
-          <button class="homeHeaderButton" id="button4">
-            EDUCATION
-          </button>
-          <button class="homeHeaderButton" id="button5">
-            SKILLS
-          </button>
-          <button class="homeHeaderButton" id="button6">
-            CLASSES
-          </button>
 
+<head>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title> John Roy </title>
+  <link rel="icon" type="image/png" href="images/profileclose.png">
+</head>
+<body>
+  <div class="homeBody" id="home">
+    <div class="staticBackground"/>
+      <div class="homeHeader">
+        <button class="homeHeaderButton" id="button1">
+          HOME
+        </button>
+        <button class="homeHeaderButton" id="button2">
+          PROFILE
+        </button>
+        <button class="homeHeaderButton" id="button3">
+          PORTFOLIO
+        </button>
+        <button class="homeHeaderButton" id="button4">
+          EDUCATION
+        </button>
+        <button class="homeHeaderButton" id="button5">
+          SKILLS
+        </button>
+        <button class="homeHeaderButton" id="button6">
+          CLASSES
+        </button>
+
+      </div>
+      <div class="homeContent">
+        <div>
+          JOHN ROY
         </div>
-        <div class="homeContent">
-          <div>
-            JOHN ROY
+          <div style="height: 30px; font-weight: 200; font-size: 30px;" class="typewrite" data-period="2000" data-type='[ "STUDENT", "SOFTWARE ENGINEER", "DESIGNER" ]'>
           </div>
-          <div style="font-weight: 200; font-size: 30px;">
-            STUDENT, SOFTWARE ENGINEER, DESIGNER
-          </div>
-          <div class="homeMoreButton" id="moreButton">
-            MORE
-          </div>
+
+        <div class="homeMoreButton" id="moreButton">
+          MORE
         </div>
+      </div>
+  </div>
+
+  <div>
+    <div class="profileBody" id="profile">
+      <div class="profileContent">
+        <div class="profileText">
+          <strong class="profileTitle">
+            ABOUT ME
+          </strong>
+          <sub class="profileSubtext">
+            My name is John, I am a student and a full-stack developer
+            studying Computer Science at Brown University in Providence
+            Rhode Island.
+          </sub>
+        </div>
+        <div class="profileImage"/>
+      </div>
+    </div>
+  </div>
+
+  <div data-scroll-reveal="enter left and move 50px over 1.33s" class="expandedBody" id="portfolio">
+    <strong class="profileTitle" style="color:black">
+      PORTFOLIO
+    </strong>
+    <div class="portfolioContent">
+      <a class="portfolioFrame" href="portfolio_tinytodo.html">
+        <img class="portfolioImage" src="images/tinyTodo.png"/>
+        <div class="portfolioText">
+          Tiny Todo
+          <br/>
+          <span style="font-weight: 200; font-size: 22px;">
+            Design and Development
+          </span>
+        </div>
+      </a>
+
+      <a class="portfolioFrame" href="portfolio_beenthere.html">
+        <img class="portfolioImage" src="images/beenthere.gif"/>
+        <div class="portfolioText">
+          Been There
+          <br/>
+          <span style="font-weight: 200; font-size: 22px;">
+            Web Development
+          </span>
+        </div>
+      </a>
+
+      <a class="portfolioFrame" href="portfolio_venueweb.html">
+        <img class="portfolioImage" src="images/venueWeb.png"/>
+        <div class="portfolioText">
+            Venue
+          <br/>
+          <span style="font-weight: 200; font-size: 22px;">
+            Web Development
+          </span>
+        </div>
+      </a>
     </div>
 
+    <div class="portfolioContent">
+      <a class="portfolioFrame" href="portfolio_venuemobile.html">
+        <img class="portfolioImage" src="images/venueMobile.png"/>
+        <div class="portfolioText">
+            Venue
+          <br/>
+          <span style="font-weight: 200; font-size: 22px;">
+            App Design
+          </span>
+        </div>
+      </a>
+
+      <a class="portfolioFrame" href="portfolio_flashfloat.html">
+        <img class="portfolioImage" src="images/flashFloat.png"/>
+        <div class="portfolioText">
+          FlashFloat
+          <br/>
+          <span style="font-weight: 200; font-size: 22px;">
+            Development
+          </span>
+        </div>
+      </a>
+
+      <a class="portfolioFrame" href="portfolio_optec.html">
+        <img class="portfolioImage" src="images/finaltransfer.gif"/>
+        <div class="portfolioText">
+          Optec Sentinel
+          <br/>
+          <span style="font-weight: 200; font-size: 22px;">
+            Illustration and Animation
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="educationBody" style="align-items: center" id="education">
+    <strong class="profileTitle">
+      EDUCATION
+    </strong>
+    <div class="educationLabel">
+      BROWN UNIVERSITY
+    </div>
+    <div class="educationSub">
+      IN PROGRESS
+    </div>
+    <br/>
+    <img src="images/brown.png" height="100"/>
+    <br />
+    2018-2022, Computer Science, A.B.
+  </div>
+
+  <div class="skillsBody" id="skills">
+    <strong class="profileTitle" style="color:black">
+      SKILLS
+    </strong>
+    <div class="skillsContent">
+      <div class="skillsChunk">
+        <img class="skillsIcon" src="images/brush.svg"/>
+        <div class="skillsLabel">
+          DESIGN
+        </div>
+        Illustrator, PhotoShop, AfterEffects, SolidWorks, Adobe XD
+      </div>
+      <div class="skillsChunk">
+        <img class="skillsIcon" src="images/laptop.svg"/>
+        <div class="skillsLabel">
+          FRONT-END
+        </div>
+        React, JavaScript, React Native, CSS, HTML, jQuery
+      </div>
+      <div class="skillsChunk">
+        <img class="skillsIcon" src="images/tools.svg"/>
+        <div class="skillsLabel">
+          BACK-END
+        </div>
+        MySQL, MongoDB, Firebase, Firestore, Node.js
+      </div>
+    </div>
+  </div>
+
+  <div class="classesBody" style="align-items: center" id="classes">
+    <strong class="profileTitle" style="margin-bottom: 20px">
+      CLASSES
+    </strong>
+    <div class="classesContainer">
+      <div class="classesCol">
+        <a class="classButton">
+          <div class="classTitle"> CSCI0330 </div>
+          <div class="classSubtitle">
+            Computer Systems, Storage Units, Caches, Processors, I/O Controllers, Optimization, Network Programming, Virtual Memory, Concurrent Programming
+          </div>
+          <div class="languageContainer">
+            <div class="classLanguage"> C </div>
+            <div class="classLanguage"> x86 Assembly </div>
+          </div>
+        </a>
+        <a class="classButton">
+          <div class="classTitle"> CSCI0170 </div>
+          <div class="classSubtitle">
+            Algorithms, Functional Programming, Time Complexity, Graph Theory, Searching, Sorting
+          </div>
+          <div class="languageContainer">
+            <div class="classLanguage"> OCaml </div>
+            <div class="classLanguage"> Lisp </div>
+            <div class="classLanguage"> Racket </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="classesCol">
+        <a class="classButton">
+          <div class="classTitle"> APMA1690 </div>
+          <div class="classSubtitle">
+            Stochastic Approximation, PRNG, Random Walks, Markov Models, Bayes Nets, Markov Random Fields, Dynamic Programming, Dimensionality Reduction
+          </div>
+          <div class="languageContainer">
+            <div class="classLanguage"> MatLab </div>
+          </div>
+        </a>
+        <a class="classButton">
+          <div class="classTitle"> CSCI0180 </div>
+          <div class="classSubtitle">
+            Data Structures, Optimization, Object Oriented Programming, Web Architecture, Networks
+          </div>
+          <div class="languageContainer">
+            <div class="classLanguage"> Java </div>
+            <div class="classLanguage"> Scala </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="classesCol">
+        <a class="classButton">
+          <div class="classTitle"> CSCI1320 </div>
+          <div class="classSubtitle">
+            Web Design, Web Security, Databases, Servers, Browsers, Mobile Applications, Visual Design, User Testing, Iterative Design
+          </div>
+          <div class="languageContainer">
+            <div class="classLanguage"> JavaScript </div>
+            <div class="classLanguage"> HTML </div>
+            <div class="classLanguage"> SQL </div>
+            <div class="classLanguage"> Python </div>
+          </div>
+        </a>
+        <a class="classButton">
+          <div class="classTitle"> CSCI1300 </div>
+          <div class="classSubtitle">
+            User Testing, Personas, Visual Design, Design Heuristics, Prototyping, Design Methodologies, AB Testing
+          </div>
+          <div class="languageContainer">
+            <div class="classLanguage"> JavaScript </div>
+            <div class="classLanguage"> HTML </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerBody" style="font-weight: 400;">
+    <a class="plaintextButton" style="margin-top: 0px" href="mailto:jkairoy@gmail.com">Email</a>
+    <!-- <form method="get" action="JohnRoyResume.pdf">
+       <button class="plaintextButton" type="submit">Resumé</button>
+    </form> -->
     <div>
-      <div class="profileBody" id="profile">
-        <div class="profileContent">
-          <div class="profileText">
-            <strong class="profileTitle">
-              ABOUT ME
-            </strong>
-            <sub class="profileSubtext">
-              My name is John, I am a student and a full-stack developer
-              studying Computer Science at Brown University in Providence
-              Rhode Island.
-            </sub>
-          </div>
-          <div class="profileImage"/>
-        </div>
-      </div>
+      <a href="https://github.com/jkairoy">
+        <img class="socialButton" src="images/github.png" />
+      </a>
+      <a href="https://www.linkedin.com/in/john-r-888b49131">
+        <img class="socialButton" src="images/linkedin.png" />
+      </a>
     </div>
 
-    <div class="expandedBody" id="portfolio">
-      <strong class="profileTitle" style="color:black">
-        PORTFOLIO
-      </strong>
-      <div class="portfolioContent">
-        <a class="portfolioFrame" href="portfolio_tinytodo.html">
-          <img class="portfolioImage" src="images/tinyTodo.png"/>
-          <div class="portfolioText">
-            Tiny Todo
-            <br/>
-            <span style="font-weight: 200; font-size: 22px;">
-              Design and Development
-            </span>
-          </div>
-        </a>
-
-        <a class="portfolioFrame" href="portfolio_beenthere.html">
-          <img class="portfolioImage" src="images/beenthere.gif"/>
-          <div class="portfolioText">
-            Been There
-            <br/>
-            <span style="font-weight: 200; font-size: 22px;">
-              Web Development
-            </span>
-          </div>
-        </a>
-
-        <a class="portfolioFrame" href="portfolio_venueweb.html">
-          <img class="portfolioImage" src="images/venueWeb.png"/>
-          <div class="portfolioText">
-              Venue
-            <br/>
-            <span style="font-weight: 200; font-size: 22px;">
-              Web Development
-            </span>
-          </div>
-        </a>
-      </div>
-
-      <div class="portfolioContent">
-        <a class="portfolioFrame" href="portfolio_venuemobile.html">
-          <img class="portfolioImage" src="images/venueMobile.png"/>
-          <div class="portfolioText">
-              Venue
-            <br/>
-            <span style="font-weight: 200; font-size: 22px;">
-              App Design
-            </span>
-          </div>
-        </a>
-
-        <a class="portfolioFrame" href="portfolio_flashfloat.html">
-          <img class="portfolioImage" src="images/flashFloat.png"/>
-          <div class="portfolioText">
-            FlashFloat
-            <br/>
-            <span style="font-weight: 200; font-size: 22px;">
-              Development
-            </span>
-          </div>
-        </a>
-
-        <a class="portfolioFrame" href="portfolio_optec.html">
-          <img class="portfolioImage" src="images/finaltransfer.gif"/>
-          <div class="portfolioText">
-            Optec Sentinel
-            <br/>
-            <span style="font-weight: 200; font-size: 22px;">
-              Illustration and Animation
-            </span>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="educationBody" style="align-items: center" id="education">
-      <strong class="profileTitle">
-        EDUCATION
-      </strong>
-      <div class="educationLabel">
-        BROWN UNIVERSITY
-      </div>
-      <div class="educationSub">
-        IN PROGRESS
-      </div>
-      <br/>
-      <img src="images/brown.png" height="100"/>
-      <br />
-      2018-2022, Computer Science, A.B.
-    </div>
-
-    <div class="skillsBody" id="skills">
-      <strong class="profileTitle" style="color:black">
-        SKILLS
-      </strong>
-      <div class="skillsContent">
-        <div class="skillsChunk">
-          <img class="skillsIcon" src="images/brush.svg"/>
-          <div class="skillsLabel">
-            DESIGN
-          </div>
-          Illustrator, PhotoShop, AfterEffects, SolidWorks, Adobe XD
-        </div>
-        <div class="skillsChunk">
-          <img class="skillsIcon" src="images/laptop.svg"/>
-          <div class="skillsLabel">
-            FRONT-END
-          </div>
-          React, JavaScript, React Native, CSS, HTML, jQuery
-        </div>
-        <div class="skillsChunk">
-          <img class="skillsIcon" src="images/tools.svg"/>
-          <div class="skillsLabel">
-            BACK-END
-          </div>
-          MySQL, MongoDB, Firebase, Firestore, Node.js
-        </div>
-      </div>
-    </div>
-
-    <div class="classesBody" style="align-items: center" id="classes">
-      <strong class="profileTitle" style="margin-bottom: 20px">
-        CLASSES
-      </strong>
-      <div class="classesContainer">
-        <div class="classesCol">
-          <a class="classButton">
-            <div class="classTitle"> CSCI0330 </div>
-            <div class="classSubtitle">
-              Computer Systems, Storage Units, Caches, Processors, I/O Controllers, Optimization, Network Programming, Virtual Memory, Concurrent Programming
-            </div>
-            <div class="languageContainer">
-              <div class="classLanguage"> C </div>
-              <div class="classLanguage"> x86 Assembly </div>
-            </div>
-          </a>
-          <a class="classButton">
-            <div class="classTitle"> CSCI0170 </div>
-            <div class="classSubtitle">
-              Algorithms, Functional Programming, Time Complexity, Graph Theory, Searching, Sorting
-            </div>
-            <div class="languageContainer">
-              <div class="classLanguage"> OCaml </div>
-              <div class="classLanguage"> Lisp </div>
-              <div class="classLanguage"> Racket </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="classesCol">
-          <a class="classButton">
-            <div class="classTitle"> APMA1690 </div>
-            <div class="classSubtitle">
-              Stochastic Approximation, PRNG, Random Walks, Markov Models, Bayes Nets, Markov Random Fields, Dynamic Programming, Dimensionality Reduction
-            </div>
-            <div class="languageContainer">
-              <div class="classLanguage"> MatLab </div>
-            </div>
-          </a>
-          <a class="classButton">
-            <div class="classTitle"> CSCI0180 </div>
-            <div class="classSubtitle">
-              Data Structures, Optimization, Object Oriented Programming, Web Architecture, Networks
-            </div>
-            <div class="languageContainer">
-              <div class="classLanguage"> Java </div>
-              <div class="classLanguage"> Scala </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="classesCol">
-          <a class="classButton">
-            <div class="classTitle"> CSCI1320 </div>
-            <div class="classSubtitle">
-              Web Design, Web Security, Databases, Servers, Browsers, Mobile Applications, Visual Design, User Testing, Iterative Design
-            </div>
-            <div class="languageContainer">
-              <div class="classLanguage"> JavaScript </div>
-              <div class="classLanguage"> HTML </div>
-              <div class="classLanguage"> SQL </div>
-              <div class="classLanguage"> Python </div>
-            </div>
-          </a>
-          <a class="classButton">
-            <div class="classTitle"> CSCI1300 </div>
-            <div class="classSubtitle">
-              User Testing, Personas, Visual Design, Design Heuristics, Prototyping, Design Methodologies, AB Testing
-            </div>
-            <div class="languageContainer">
-              <div class="classLanguage"> JavaScript </div>
-              <div class="classLanguage"> HTML </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footerBody" style="font-weight: 400;">
-      <a class="plaintextButton" style="margin-top: 0px" href="mailto:jkairoy@gmail.com">Email</a>
-      <!-- <form method="get" action="JohnRoyResume.pdf">
-         <button class="plaintextButton" type="submit">Resumé</button>
-      </form> -->
-      <div>
-        <a href="https://github.com/jkairoy">
-          <img class="socialButton" src="images/github.png" />
-        </a>
-        <a href="https://www.linkedin.com/in/john-r-888b49131">
-          <img class="socialButton" src="images/linkedin.png" />
-        </a>
-      </div>
-
-      <br />
-      © 2019 John Roy
-      <!-- <a href="mailto:jkairoy@gmail.com" class="contactButton">
-        CONTACT
-      </a> -->
-    </div>
-  </body>
+    <br />
+    © 2019 John Roy
+    <!-- <a href="mailto:jkairoy@gmail.com" class="contactButton">
+      CONTACT
+    </a> -->
+  </div>
+</body>
 </html>
