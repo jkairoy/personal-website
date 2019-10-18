@@ -35,7 +35,7 @@ $(document).ready(function (){
     });
 });
 $(document).ready(function (){
-    $("#button3").click(function (){
+    $("#button5").click(function (){
         $('html, body').animate({
             scrollTop: $("#skills").offset().top
         }, 400);
@@ -49,13 +49,19 @@ $(document).ready(function (){
     });
 });
 $(document).ready(function (){
-    $("#button5").click(function (){
+    $("#button3").click(function (){
         $('html, body').animate({
             scrollTop: $("#portfolio").offset().top
         }, 400);
     });
 });
-
+$(document).ready(function (){
+    $("#button6").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#classes").offset().top
+        }, 400);
+    });
+});
 
 
 
@@ -77,14 +83,18 @@ $(document).ready(function (){
             PROFILE
           </button>
           <button class="homeHeaderButton" id="button3">
-            SKILLS
+            PORTFOLIO
           </button>
           <button class="homeHeaderButton" id="button4">
             EDUCATION
           </button>
           <button class="homeHeaderButton" id="button5">
-            PORTFOLIO
+            SKILLS
           </button>
+          <button class="homeHeaderButton" id="button6">
+            CLASSES
+          </button>
+
         </div>
         <div class="homeContent">
           <div>
@@ -122,7 +132,7 @@ $(document).ready(function (){
         PORTFOLIO
       </strong>
       <div class="portfolioContent">
-        <a class="portfolioFrame" href="portfolio4.html">
+        <a class="portfolioFrame" href="portfolio_tinytodo.html">
           <img class="portfolioImage" src="images/tinyTodo.png"/>
           <div class="portfolioText">
             Tiny Todo
@@ -133,7 +143,7 @@ $(document).ready(function (){
           </div>
         </a>
 
-        <a class="portfolioFrame" href="portfolio6.html">
+        <a class="portfolioFrame" href="portfolio_beenthere.html">
           <img class="portfolioImage" src="images/beenthere.gif"/>
           <div class="portfolioText">
             Been There
@@ -144,7 +154,7 @@ $(document).ready(function (){
           </div>
         </a>
 
-        <a class="portfolioFrame" href="portfolio2.html">
+        <a class="portfolioFrame" href="portfolio_venueweb.html">
           <img class="portfolioImage" src="images/venueWeb.png"/>
           <div class="portfolioText">
               Venue
@@ -157,7 +167,7 @@ $(document).ready(function (){
       </div>
 
       <div class="portfolioContent">
-        <a class="portfolioFrame" href="portfolio3.html">
+        <a class="portfolioFrame" href="portfolio_venuemobile.html">
           <img class="portfolioImage" src="images/venueMobile.png"/>
           <div class="portfolioText">
               Venue
@@ -168,7 +178,7 @@ $(document).ready(function (){
           </div>
         </a>
 
-        <a class="portfolioFrame" href="portfolio5.html">
+        <a class="portfolioFrame" href="portfolio_flashfloat.html">
           <img class="portfolioImage" src="images/flashFloat.png"/>
           <div class="portfolioText">
             FlashFloat
@@ -179,7 +189,7 @@ $(document).ready(function (){
           </div>
         </a>
 
-        <a class="portfolioFrame" href="portfolio1.html">
+        <a class="portfolioFrame" href="portfolio_optec.html">
           <img class="portfolioImage" src="images/finaltransfer.gif"/>
           <div class="portfolioText">
             Optec Sentinel
@@ -239,11 +249,11 @@ $(document).ready(function (){
 
     <div class="classesBody" style="align-items: center" id="classes">
       <strong class="profileTitle" style="margin-bottom: 20px">
-        RELEVANT CLASSES
+        CLASSES
       </strong>
       <div class="classesContainer">
         <div class="classesCol">
-          <div class="classButton">
+          <a class="classButton">
             <div class="classTitle"> CSCI0330 </div>
             <div class="classSubtitle">
               Computer Systems, Storage Units, Caches, Processors, I/O Controllers, Optimization, Network Programming, Virtual Memory, Concurrent Programming
@@ -252,8 +262,8 @@ $(document).ready(function (){
               <div class="classLanguage"> C </div>
               <div class="classLanguage"> x86 Assembly </div>
             </div>
-          </div>
-          <div class="classButton">
+          </a>
+          <a class="classButton">
             <div class="classTitle"> CSCI0170 </div>
             <div class="classSubtitle">
               Algorithms, Functional Programming, Time Complexity, Graph Theory, Searching, Sorting
@@ -263,11 +273,11 @@ $(document).ready(function (){
               <div class="classLanguage"> Lisp </div>
               <div class="classLanguage"> Racket </div>
             </div>
-          </div>
+          </a>
         </div>
 
         <div class="classesCol">
-          <div class="classButton">
+          <a class="classButton">
             <div class="classTitle"> APMA1690 </div>
             <div class="classSubtitle">
               Stochastic Approximation, PRNG, Random Walks, Markov Models, Bayes Nets, Markov Random Fields, Dynamic Programming, Dimensionality Reduction
@@ -275,8 +285,8 @@ $(document).ready(function (){
             <div class="languageContainer">
               <div class="classLanguage"> MatLab </div>
             </div>
-          </div>
-          <div class="classButton">
+          </a>
+          <a class="classButton">
             <div class="classTitle"> CSCI0180 </div>
             <div class="classSubtitle">
               Data Structures, Optimization, Object Oriented Programming, Web Architecture, Networks
@@ -285,11 +295,11 @@ $(document).ready(function (){
               <div class="classLanguage"> Java </div>
               <div class="classLanguage"> Scala </div>
             </div>
-          </div>
+          </a>
         </div>
 
         <div class="classesCol">
-          <div class="classButton">
+          <a class="classButton">
             <div class="classTitle"> CSCI1320 </div>
             <div class="classSubtitle">
               Web Design, Web Security, Databases, Servers, Browsers, Mobile Applications, Visual Design, User Testing, Iterative Design
@@ -300,8 +310,8 @@ $(document).ready(function (){
               <div class="classLanguage"> SQL </div>
               <div class="classLanguage"> Python </div>
             </div>
-          </div>
-          <div class="classButton">
+          </a>
+          <a class="classButton">
             <div class="classTitle"> CSCI1300 </div>
             <div class="classSubtitle">
               User Testing, Personas, Visual Design, Design Heuristics, Prototyping, Design Methodologies, AB Testing
@@ -310,7 +320,7 @@ $(document).ready(function (){
               <div class="classLanguage"> JavaScript </div>
               <div class="classLanguage"> HTML </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
