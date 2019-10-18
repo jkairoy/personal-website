@@ -342,6 +342,73 @@ body {
   opacity: 0.6;
 }
 
+.classesBody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #464646;
+  height: 920px;
+  width: 100%;
+  background-color: white;
+}
+
+.classesContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.classesCol{
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.classButton {
+  width: 300px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #afafaf;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.classButton:hover {
+  opacity: 0.6;
+}
+
+.classTitle {
+  margin-bottom: 8px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.classSubtitle {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.languageContainer {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: row;
+}
+
+.classLanguage {
+  padding: 6px;
+  border-radius: 4px;
+  color: white;
+  margin-right: 10px;
+  background-color: #afafaf;
+}
+
 .footerBody{
   display: flex;
   width: 100%;
