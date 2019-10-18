@@ -376,7 +376,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 30px;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: 0.2s;
 }
 .classButton:hover {
