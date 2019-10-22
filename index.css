@@ -154,7 +154,7 @@ body {
 .profileImage{
   flex-shrink: 0;
   height: 100%;
-  width: 420px;
+  width: 450px;
   margin-left: 100px;
   background-repeat: no-repeat;
   background-size: cover;
