@@ -2,6 +2,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="javascript/typewriter.js"></script>
 <script type="text/javascript" src="javascript/header.js"></script>
+<script type="text/javascript" src="javascript/renderportfolio.js"></script>
+<script type="text/javascript" src="javascript/renderclass.js"></script>
+
 <script type="text/javascript">
 </script>
 
@@ -66,88 +69,11 @@
     </div>
   </div>
 
-  <div data-scroll-reveal="enter left and move 50px over 1.33s" class="expandedBody" id="portfolio">
+  <div class="expandedBody" id="portfolio">
     <strong class="profileTitle" style="color:black">
       PORTFOLIO
     </strong>
-    <div class="portfolioContent">
-      <div class="portfolioGridBox">
-        <a class="portfolioFrame" href="portfolio_tinytodo.html">
-          <img class="portfolioImage" src="images/tinyTodo.png"/>
-          <div class="portfolioText">
-            Tiny Todo
-            <br/>
-            <span style="font-weight: 200; font-size: 22px;">
-              Design and Development
-            </span>
-          </div>
-        </a>
-      </div>
-
-      <div class="portfolioGridBox">
-        <a class="portfolioFrame" href="portfolio_beenthere.html">
-          <img class="portfolioImage" src="images/beenthere.gif"/>
-          <div class="portfolioText">
-            Been There
-            <br/>
-            <span style="font-weight: 200; font-size: 22px;">
-              Web Development
-            </span>
-          </div>
-        </a>
-      </div>
-
-      <div class="portfolioGridBox">
-        <a class="portfolioFrame" href="portfolio_venueweb.html">
-          <img class="portfolioImage" src="images/venueWeb.png"/>
-          <div class="portfolioText">
-              Venue
-            <br/>
-            <span style="font-weight: 200; font-size: 22px;">
-              Web Development
-            </span>
-          </div>
-        </a>
-      </div>
-
-      <div class="portfolioGridBox">
-        <a class="portfolioFrame" href="portfolio_venuemobile.html">
-          <img class="portfolioImage" src="images/venueMobile.png"/>
-          <div class="portfolioText">
-              Venue
-            <br/>
-            <span style="font-weight: 200; font-size: 22px;">
-              App Design
-            </span>
-          </div>
-        </a>
-      </div>
-
-      <div class="portfolioGridBox">
-        <a class="portfolioFrame" href="portfolio_flashfloat.html">
-          <img class="portfolioImage" src="images/flashFloat.png"/>
-          <div class="portfolioText">
-            FlashFloat
-            <br/>
-            <span style="font-weight: 200; font-size: 22px;">
-              Development
-            </span>
-          </div>
-        </a>
-      </div>
-
-      <div class="portfolioGridBox">
-        <a class="portfolioFrame" href="portfolio_optec.html">
-          <img class="portfolioImage" src="images/finaltransfer.gif"/>
-          <div class="portfolioText">
-            Optec Sentinel
-            <br/>
-            <span style="font-weight: 200; font-size: 22px;">
-              Illustration and Animation
-            </span>
-          </div>
-        </a>
-      </div>
+    <div class="portfolioContent" id="portfolioContent">
     </div>
   </div>
 
@@ -200,77 +126,8 @@
     <strong class="profileTitle" style="margin-bottom: 20px">
       CLASSES
     </strong>
-    <div class="classesContainer">
-      <div class="classesCol">
-        <a class="classButton">
-          <div class="classTitle"> CSCI0330 </div>
-          <div class="classSubtitle">
-            Computer Systems, Storage Units, Caches, Processors, I/O Controllers, Optimization, Network Programming, Virtual Memory, Concurrent Programming
-          </div>
-          <div class="languageContainer">
-            <div class="classLanguage"> C </div>
-            <div class="classLanguage"> x86 Assembly </div>
-          </div>
-        </a>
-        <a class="classButton">
-          <div class="classTitle"> CSCI0170 </div>
-          <div class="classSubtitle">
-            Algorithms, Functional Programming, Time Complexity, Graph Theory, Searching, Sorting
-          </div>
-          <div class="languageContainer">
-            <div class="classLanguage"> OCaml </div>
-            <div class="classLanguage"> Lisp </div>
-            <div class="classLanguage"> Racket </div>
-          </div>
-        </a>
-      </div>
+    <div id="classesContainer" class="classesContainer">
 
-      <div class="classesCol">
-        <a class="classButton">
-          <div class="classTitle"> APMA1690 </div>
-          <div class="classSubtitle">
-            Stochastic Approximation, PRNG, Random Walks, Markov Models, Bayes Nets, Markov Random Fields, Dynamic Programming, Dimensionality Reduction
-          </div>
-          <div class="languageContainer">
-            <div class="classLanguage"> MatLab </div>
-          </div>
-        </a>
-        <a class="classButton">
-          <div class="classTitle"> CSCI0180 </div>
-          <div class="classSubtitle">
-            Data Structures, Optimization, Object Oriented Programming, Web Architecture, Networks
-          </div>
-          <div class="languageContainer">
-            <div class="classLanguage"> Java </div>
-            <div class="classLanguage"> Scala </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="classesCol">
-        <a class="classButton">
-          <div class="classTitle"> CSCI1320 </div>
-          <div class="classSubtitle">
-            Web Design, Web Security, Databases, Servers, Browsers, Mobile Applications, Visual Design, User Testing, Iterative Design
-          </div>
-          <div class="languageContainer">
-            <div class="classLanguage"> JavaScript </div>
-            <div class="classLanguage"> HTML </div>
-            <div class="classLanguage"> SQL </div>
-            <div class="classLanguage"> Python </div>
-          </div>
-        </a>
-        <a class="classButton">
-          <div class="classTitle"> CSCI1300 </div>
-          <div class="classSubtitle">
-            User Testing, Personas, Visual Design, Design Heuristics, Prototyping, Design Methodologies, AB Testing
-          </div>
-          <div class="languageContainer">
-            <div class="classLanguage"> JavaScript </div>
-            <div class="classLanguage"> HTML </div>
-          </div>
-        </a>
-      </div>
     </div>
   </div>
 

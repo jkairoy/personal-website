@@ -361,24 +361,25 @@ body {
   justify-content: center;
   align-items: center;
   color: #464646;
-  height: 920px;
   width: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: white;
 }
 
 .classesContainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  margin-top: 30px;
+  display: grid;
+  width: 1170px;
+  grid-gap: 0px;
+  grid-template-columns: 390px 390px 390px;
+  grid-template-rows: 290px 290px;
 }
 
-.classesCol{
-  margin-left: 20px;
-  margin-right: 20px;
+.classGridBox{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 40px;
 }
 
 .classButton {
@@ -506,7 +507,14 @@ body {
   grid-template-columns: 420px 420px;
   grid-template-rows: 400px 400px 400px;
 }
-
+.classesContainer{
+  margin-top: 30px;
+  display: grid;
+  width: 780px;
+  grid-gap: 0px;
+  grid-template-columns: 390px 390px;
+  grid-template-rows: 290px 290px 290px;
+}
 }
 @media (max-width: 840px) {
 .portfolioContent{
@@ -516,5 +524,13 @@ body {
   grid-gap: 0px;
   grid-template-columns: 420px;
   grid-template-rows: 400px 400px 400px 400px 400px 400px;
+}
+.classesContainer{
+  margin-top: 30px;
+  display: grid;
+  width: 390px;
+  grid-gap: 0px;
+  grid-template-columns: 390px;
+  grid-template-rows: 290px 290px 290px 290px 290px 290px;
 }
 }
