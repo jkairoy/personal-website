@@ -9,6 +9,7 @@ a {
 
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  overflow-x: hidden;
   margin: 0;
   background-color: white;
   display: flex;
