@@ -21,7 +21,7 @@ const classes = [
     name: "CSCI0170",
     topics: "Algorithms, Functional Programming, Time Complexity, Graph Theory, Searching, Sorting, Recurrence Relations",
     languages: ["OCaml", "Lisp", "Racket"],
-    href: "classes/class_cs0330.html"
+    href: "classes/class_cs0170.html"
   },
   {
     name: "CSCI1300",
