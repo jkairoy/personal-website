@@ -12,50 +12,24 @@ if(yPos > yPoint) {
 
 $(document).ready(function (){
     $("#moreButton").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#profile").offset().top
-        }, 300);
+      $(window).scrollTop($("#profile").offset().top);
     });
-});
-$(document).ready(function (){
     $("#button1").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#home").offset().top
-        }, 400);
+      $(window).scrollTop($("#home").offset().top);
     });
-});
-$(document).ready(function (){
     $("#button2").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#profile").offset().top
-        }, 400);
+      $(window).scrollTop($("#profile").offset().top);
     });
-});
-$(document).ready(function (){
     $("#button5").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#skills").offset().top
-        }, 400);
+      $(window).scrollTop($("#skills").offset().top);
     });
-});
-$(document).ready(function (){
     $("#button4").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#education").offset().top
-        }, 400);
+      $(window).scrollTop($("#education").offset().top);
     });
-});
-$(document).ready(function (){
     $("#button3").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#portfolio").offset().top
-        }, 400);
+      $(window).scrollTop($("#portfolio").offset().top);
     });
-});
-$(document).ready(function (){
     $("#button6").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#classes").offset().top
-        }, 400);
+      $(window).scrollTop($("#classes").offset().top);
     });
 });
