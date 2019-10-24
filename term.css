@@ -63,6 +63,7 @@
      * HACK: to fix IE's blinking cursor
      * Move textarea out of the screen to the far left, so that the cursor is not visible.
      */
+
     position: absolute;
     opacity: 0;
     left: -9999em;

@@ -27,13 +27,13 @@ const classes = [
     name: "CSCI1300",
     topics: "User Testing, Personas, Visual Design, Design Heuristics, Prototyping, Design Methodologies, AB Testing, JavaScript",
     languages: ["JavaScript", "HTML"],
-    href: "classes/class_cs0330.html"
+    href: "classes/class_cs1300.html"
   },
   {
     name: "CSCI0180",
     topics: "Data Structures, Optimization, Object Oriented Programming, Web Architecture, Networks",
     languages: ["Java", "Scala"],
-    href: "classes/class_cs0330.html"
+    href: "classes/class_cs0180.html"
   },
 ]
 
