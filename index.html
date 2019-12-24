@@ -1,155 +1,206 @@
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="javascript/typewriter.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script type="text/javascript" src="javascript/animatehome.js"></script>
+<script type="text/javascript" src="javascript/blob.js"></script>
 <script type="text/javascript" src="javascript/header.js"></script>
-<script type="text/javascript" src="javascript/renderportfolio.js"></script>
-<script type="text/javascript" src="javascript/renderclass.js"></script>
-
-<script type="text/javascript">
-</script>
-
+<script type="text/javascript" src="javascript/navigate.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/uby0rot.css">
 <head>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
   <title> John Roy </title>
-  <link rel="icon" type="image/png" href="images/profileclose.png">
+  <link rel="icon" type="image/png" href="images/shebang.png">
 </head>
 <body>
-  <div class="homeBody" id="home">
-    <div class="staticBackground"/>
-      <div class="homeHeader">
-        <button class="homeHeaderButton" id="button1">
-          HOME
+  <span id="index"> </span>
+  <header>
+    <div class="header">
+      <div id="headerHider" class="hider">
+        <button class="headerButton" id="button1">
+          Work
         </button>
-        <button class="homeHeaderButton" id="button2">
-          PROFILE
+        <button class="headerButton" id="button2">
+          About
         </button>
-        <button class="homeHeaderButton" id="button3">
-          PORTFOLIO
+        <button class="headerButton" id="button3">
+          Contact
         </button>
-        <button class="homeHeaderButton" id="button4">
-          EDUCATION
-        </button>
-        <button class="homeHeaderButton" id="button5">
-          SKILLS
-        </button>
-        <button class="homeHeaderButton" id="button6">
-          CLASSES
-        </button>
-
       </div>
-      <div class="homeContent">
+    </div>
+  </header>
+  <div class="content">
+    <div class="paddingWrap">
+      <section class="introSlide">
         <div>
-          JOHN ROY
-        </div>
-          <div style="height: 30px; font-weight: 200; font-size: 30px;" class="typewrite" data-period="2000" data-type='[ "STUDENT", "SOFTWARE ENGINEER", "DESIGNER" ]'>
+          <div class="hider" id="introTitleHider">
+            <h1>
+              Hi, I'm Johnny Roy
+            </h1>
           </div>
-
-        <div class="homeMoreButton" id="moreButton">
-          MORE
+          <div class="hider" id="introDescriptionHider">
+            <div>
+              <div style="margin-bottom: 4px">
+                Software engineer and UX designer
+              </div>
+              <div>
+                Studying Computer Science at Brown University
+              </div>
+            </div>
+          </div>
+          <div id="arrow" class="arrowContainer">
+            <span class="arrowStem"></span>
+            <div>
+            <span class="arrowTip"> </span>
+            </div>
+          </div>
+        </div>
+        <div class="landingImageContainer">
+          <img id="meflat" src="images/meflat.svg" height="380" width="auto" style="opacity: 0" />
+          <img id="float" src="images/float.svg" class="floatImage" height="380" width="auto" style="opacity: 0" />
+          <img id="blob" src="images/blob.svg" class="blobImage" height="500" width="auto" style="opacity: 0" />
+          <img id="shadow" src="images/shadow.svg" class="shadowImage" height="380px" width="auto" style="opacity: 0" />
+        </div>
+      </section>
+    </div>
+    <section id="work" class="workSection">
+      <div class="workSlideGray">
+        <div class="workInnerContainer">
+          <div class="workShiftedContinerGray">
+            <sub>
+              FULL STACK ENGINEERING
+            </sub>
+            <h2>
+              Venue
+            </h2>
+            <div>
+              Bringing communities together with an event based social media
+              application
+            </div>
+            <div class="tag">
+              Personal Project
+            </div>
+            <a href="" class="seeMore"> See More </a>
+          </div>
+        </div>
+        <img class="projectImage" src="images/venue.png" style="height: 400px; right: 150px"/>
+      </div>
+      <div class="workSlideWhite">
+        <div class="workInnerContainer">
+          <div class="workShiftedContinerWhite">
+            <sub>
+              WEB DEVELOPMENT / ORGANIZATION
+            </sub>
+            <h2>
+              Full Stack at Brown
+            </h2>
+            <div>
+              Founding and leading a club to spread web technology and
+              design philosophies
+            </div>
+            <div class="tag">
+              School Affiliated Club
+            </div>
+            <a href="" class="seeMore"> See More </a>
+          </div>
+        </div>
+        <img class="projectImage" src="images/fullstack.png"/>
+      </div>
+      <div class="workSlideGray">
+        <div class="workInnerContainer">
+          <div class="workShiftedContinerGray">
+            <sub>
+              DESKTOP APPLICATION ENGINEERING
+            </sub>
+            <h2>
+              Tiny Todo
+            </h2>
+            <div>
+              Creating a todo app that cuts out the hassle by organizing
+              your work for you
+            </div>
+            <div class="tag">
+              Personal Project
+            </div>
+            <a href="" class="seeMore"> See More </a>
+          </div>
+        </div>
+        <img class="projectImage" src="images/tinytodo.png" />
+      </div>
+      <div class="workSlideWhite">
+        <div class="workInnerContainer">
+          <div class="workShiftedContinerWhite">
+            <sub>
+              FULL STACK ENGINEERING
+            </sub>
+            <h2>
+              Been There
+            </h2>
+            <div>
+              Helping trauma victims find their voice with an anonymous
+              network based off of one way communication
+            </div>
+            <div class="tag">
+              Personal Project
+            </div>
+            <a href="" class="seeMore"> See More </a>
+          </div>
+        </div>
+        <img class="projectImage" src="images/beenthere.png" style="right: 0; height: 380px"/>
+      </div>
+      <div class="workSlideGray">
+        <div class="workInnerContainer">
+          <div class="workShiftedContinerGray">
+            <sub>
+              UI/UX DESIGN
+            </sub>
+            <h2>
+              MylkGuys Mobile App
+            </h2>
+            <div>
+              Designing and testing a prototyped mobile application design
+              for grocery startup MylkGuys
+            </div>
+            <div class="tag">
+              Class Work
+            </div>
+            <a href="" class="seeMore"> See More </a>
+          </div>
+        </div>
+        <img class="projectImage" src="images/mylk1.png" />
+      </div>
+      <div class="workSlideWhite">
+        <div class="workInnerContainer">
+          <div class="workShiftedContinerWhite">
+            <sub>
+              AUGMENTED REALITY / IIOT
+            </sub>
+            <h2>
+              Nordson
+            </h2>
+            <div>
+              Optimizing assembly lines with The Internet of Things and
+              Augmented Reality
+            </div>
+            <div class="tag">
+              Summer Internship
+            </div>
+            <a href="" class="seeMore"> See More </a>
+          </div>
+        </div>
+        <img class="projectImage" src="images/nordson.png" style="height: 300px"/>
+      </div>
+    </section>
+    <footer class="footerBody">
+      <div class="paddingWrap">
+        <div class="footerContent">
+        <sub style="opacity: 0.5; font-size: 14px">
+          Written and Designed by John Roy © 2019
+        </sub>
         </div>
       </div>
-  </div>
-
-  <div>
-    <div class="profileBody" id="profile">
-      <div class="profileContent">
-        <div class="profileText">
-          <strong class="profileTitle">
-            ABOUT ME
-          </strong>
-          <sub class="profileSubtext">
-            My name is John, I am a student and a full-stack developer
-            studying Computer Science at Brown University in Providence
-            Rhode Island.
-          </sub>
-        </div>
-        <div class="profileImage"/>
-      </div>
-    </div>
-  </div>
-
-  <div class="expandedBody" id="portfolio">
-    <strong class="profileTitle" style="color:black">
-      PORTFOLIO
-    </strong>
-    <div class="portfolioContent" id="portfolioContent">
-    </div>
-  </div>
-
-  <div class="educationBody" style="align-items: center" id="education">
-    <strong class="profileTitle">
-      EDUCATION
-    </strong>
-    <div class="educationLabel">
-      BROWN UNIVERSITY
-    </div>
-    <div class="educationSub">
-      IN PROGRESS
-    </div>
-    <br/>
-    <img src="images/brown.png" height="100"/>
-    <br />
-    2018-2022, Computer Science, A.B.
-  </div>
-
-  <div class="skillsBody" id="skills">
-    <strong class="profileTitle" style="color:black">
-      SKILLS
-    </strong>
-    <div class="skillsContent">
-      <div class="skillsChunk">
-        <img class="skillsIcon" src="images/brush.svg"/>
-        <div class="skillsLabel">
-          DESIGN
-        </div>
-        Illustrator, PhotoShop, AfterEffects, SolidWorks, Adobe XD
-      </div>
-      <div class="skillsChunk">
-        <img class="skillsIcon" src="images/laptop.svg"/>
-        <div class="skillsLabel">
-          FRONT-END
-        </div>
-        React, JavaScript, React Native, CSS, HTML, jQuery
-      </div>
-      <div class="skillsChunk">
-        <img class="skillsIcon" src="images/tools.svg"/>
-        <div class="skillsLabel">
-          BACK-END
-        </div>
-        MySQL, MongoDB, Firebase, Firestore, Node.js
-      </div>
-    </div>
-  </div>
-
-  <div class="classesBody" style="align-items: center" id="classes">
-    <strong class="profileTitle" style="margin-bottom: 20px">
-      CLASSES
-    </strong>
-    <div id="classesContainer" class="classesContainer">
-
-    </div>
-  </div>
-
-  <div class="footerBody" style="font-weight: 400;">
-    <a class="plaintextButton" style="margin-top: 0px; margin-bottom: 20px" href="mailto:jkairoy@gmail.com">Email</a>
-    <!-- <form method="get" action="JohnRoyResume.pdf">
-       <button class="plaintextButton" type="submit">Resumé</button>
-    </form> -->
-    <div>
-      <a href="https://github.com/jkairoy">
-        <img class="socialButton" src="images/github.png" />
-      </a>
-      <a href="https://www.linkedin.com/in/john-r-888b49131">
-        <img class="socialButton" src="images/linkedin.png" />
-      </a>
-    </div>
-
-    <br />
-    © 2019 John Roy
-    <!-- <a href="mailto:jkairoy@gmail.com" class="contactButton">
-      CONTACT
-    </a> -->
+    </footer>
   </div>
 </body>
 </html>

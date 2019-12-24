@@ -1,0 +1,174 @@
+
+.introSlide {
+  width: 100%;
+  height: 100vh;
+  max-width: 1100px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+
+.arrowStem {
+  top: 17px;
+  align-self: flex-start;
+  display: block;
+  position: absolute;
+  height: 0px;
+  width: 2px;
+  background: #596170;
+  opacity: 1;
+  -webkit-transition: .15s ease;
+  -moz-transition: .15s ease;
+  -o-transition: .15s ease;
+  transition: .15s ease;
+  transition-timing-function: ease-in;
+}
+
+.arrowTip {
+  opacity: 0;
+  border: solid #596170;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.arrowContainer {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 20px;
+  height: 38px;
+  position: relative;
+}
+
+.blobImage {
+  margin-left: 40px;
+  position: absolute;
+  z-index: -1;
+}
+
+.shadowImage {
+  margin-left: 90px;
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: -1;
+}
+
+.floatImage {
+  transition-property: ease-in-out;
+  bottom: 230;
+  position: absolute;
+  z-index: 0;
+}
+
+.landingImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.workSection {
+  width: 100%;
+}
+
+.workSlideWhite {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workSlideGray {
+  position: relative;
+  overflow: hidden;
+  background-color: #F8F9FB;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workInnerContainer {
+  margin-left: 40px;
+  margin-right: 40px;
+  z-index: 1;
+  height: 600px;
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.workShiftedContinerWhite {
+  padding-right: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.workShiftedContinerGray {
+  padding-right: 30px;
+  background-color: #F8F9FB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .workShiftedContinerGray{
+    width: 100%;
+  }
+  .workShiftedContinerWhite{
+    width: 100%;
+  }
+  .projectImage {
+    opacity: 0;
+  }
+}
+
+.tag {
+  font-weight: 100;
+  color: #666666;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.projectImage {
+  right: 50;
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+
+
+.seeMore {
+  transition: 0.15s;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #77AEF9;
+  border: 1px solid #77AEF9;
+  width: 140px;
+  height: 40px;
+}
+
+.seeMore:hover {
+  opacity: 0.5;
+}

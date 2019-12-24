@@ -1,35 +1,15 @@
 $(window).scroll(function() {
-var yPos = window.pageYOffset;
-var yPoint = 899;
-if(yPos > yPoint) {
-   $(".homeHeaderButton").addClass("homeHeaderButtonBlack");
-   $(".homeHeader").css("background-color","white");
-} else {
-   $(".homeHeaderButton").removeClass("homeHeaderButtonBlack");
-   $(".homeHeader").css("background-color","transparent");
- }
-});
+  var yPos = window.pageYOffset;
+  var yPoint = window.innerHeight - 100;
 
-$(document).ready(function (){
-    $("#moreButton").click(function (){
-      $(window).scrollTop($("#profile").offset().top);
-    });
-    $("#button1").click(function (){
-      $(window).scrollTop($("#home").offset().top);
-    });
-    $("#button2").click(function (){
-      $(window).scrollTop($("#profile").offset().top);
-    });
-    $("#button5").click(function (){
-      $(window).scrollTop($("#skills").offset().top);
-    });
-    $("#button4").click(function (){
-      $(window).scrollTop($("#education").offset().top);
-    });
-    $("#button3").click(function (){
-      $(window).scrollTop($("#portfolio").offset().top);
-    });
-    $("#button6").click(function (){
-      $(window).scrollTop($("#classes").offset().top);
-    });
+  // latch header
+  $("header").css({"padding-top": Math.max(50-yPos, 0)});
+  console.log(Math.max(50-yPos, 0))
+
+  // check for work hilight
+  if(yPos > yPoint) {
+    $("#button1").addClass("headerButtonActive");
+  } else {
+    $("#button1").removeClass("headerButtonActive");
+  }
 });
