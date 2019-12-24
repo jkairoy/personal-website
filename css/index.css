@@ -21,6 +21,8 @@ button {
 }
 
 body {
+  position: relative;
+  overflow-x: hidden;
   color: #3D4758;
   font-family: europa, sans-serif;
   overflow-x: hidden;
