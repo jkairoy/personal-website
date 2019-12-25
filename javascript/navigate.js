@@ -37,4 +37,10 @@ $(document).ready(function (){
   $("#buttonbeenthere").click(function (){
     navigate("portfolio/beenthere.html");
   });
+  $("#buttonmylkguys").click(function (){
+    navigate("portfolio/mylkguys.html");
+  });
+  $("#buttonnordson").click(function (){
+    navigate("portfolio/nordson.html");
+  });
 });
