@@ -1,0 +1,208 @@
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  <script type="text/javascript" src="../javascript/navigate.js"></script>
+  <script type="text/javascript" src="../javascript/animateproject.js"></script>
+  <script type="text/javascript" src="../javascript/header.js"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/uby0rot.css">
+  <head>
+    <meta name=viewport content='width=700'>
+    <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <title> John Roy </title>
+    <link rel="icon" type="image/png" href="../images/shebang.png">
+  </head>
+  <body>
+    <span id="portfolio"></span>
+    <header>
+      <div id="header" class="header">
+        <div id="headerHider" class="hider">
+          <button class="headerButton" id="button1">
+            Work
+          </button>
+          <button class="headerButton" id="button2">
+            About
+          </button>
+          <button class="headerButton" id="button3">
+            Contact
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="paddingWrap">
+        <section class="titleSection">
+          <div>
+            <div id="titleHider" class="hider">
+              <h1>
+                Full Stack at Brown
+              </h1>
+            </div>
+            <div id="title2Hider" class="hider">
+              <sub>
+                WEB DEVELOPMENT / ORGANIZATION
+              </sub>
+            </div>
+            <div id="title3Hider" class="hider">
+              <div class="projectDescription">
+                Founding and leading a club to spread web <br/> technology and design philosophies
+              </div>
+            </div>
+            <div id="title4Hider" class="hider">
+              <div class="descriptionRow">
+                <div class="discreteList" style="margin-right: 10px">
+                  <h6>ROLE</h6>
+                  <sub>President/Founder<sub>
+                </div>
+                <div class="discreteList" style="margin-right: 10px">
+                  <h6>TIME</h6>
+                  <sub>2019-Ongoing<sub>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img id="introPicture" class="projectImage" src="../images/fullstack/bear.png" />
+        </section>
+      </div>
+      <section class="graySection">
+        <div class="paddingWrap">
+          <div style="width: 50%" class="centerSection">
+            <h3 style="margin-bottom: 10px"> The Goal </h3>
+            <sub> To help Brown organizations by giving them access to high-quality
+            web applications developed by Brown students while giving brown students
+            the opportunity to improve their practical skills by developing useful
+            applications
+          </sub>
+          </div>
+        </div>
+      </section>
+      <section class="whiteSection">
+        <div class="paddingWrap">
+          <div class="leftSection">
+            <h3 style="margin-bottom: 10px"> What's Going On </h3>
+            <sub> I officially founded Full Stack at Brown in late 2019 and
+              we are entering our first semester of existance this coming spring!
+              Check our
+              <a style="color: #77AEF9;" href="https://fullstackatbrown.com/index.html">
+              website
+              </a>
+              out to see what we are up to.
+            </sub>
+          </div>
+        </div>
+      </section>
+      <section class="graySection">
+        <div class="paddingWrap">
+          <div class="leftSection">
+            <h3 style="margin-bottom: 10px"> The Website </h3>
+            <sub>
+              I actually personally created the website for full stack at brown
+              and this lower half will be dedicated to discussing the tricks
+              I used to make the eyecandy graphics and animations on that website.
+            </sub>
+          </div>
+        </div>
+      </section>
+      <section class="whiteSection">
+        <div class="paddingWrap">
+          <div class="apartSection">
+            <div style="padding-bottom: 0px; width: 100%; margin-right: 20px" class="apartSectionLeft">
+              <h3> The Details </h3>
+              <sub>
+                For the website, I chose to go with a very minimalist design,
+                opting for flat images (which I designed in Adobe Illustrator),
+                and chosing a sarif/sans serif font combo. I will now discuss
+                the technical details of the visual implementation, if you
+                would like to know more, check out the
+                <a style="color: #77AEF9;" href="https://fullstackatbrown.com/index.html">
+                github project.
+                </a>
+              </sub>
+            </div>
+          </div>
+          <div style="padding-top: 0px; padding-bottom: 0px; margin-bottom: 24px" class="apartSection">
+            <div style="width: 65%; margin-right: 20px" class="priorityWhite apartSectionLeft">
+              <h6> THE GALAXY </h6>
+              <sub>
+                To make the galaxy effect, I created a few SVG circles and
+                rotated them off axis (using jQuery) on separate timer loops.
+                I then created a mask with these circles using a static SVG
+                gradient with the typical blues and purples of space. I also
+                made a few different images of assorted stars in Adobe Illustrator
+                and modulated their opacities using random timers. Finally, I
+                applied a gaussian blur to the SVG and feColorMatrix mask to
+                reassemble the image. After this, I put on a preassembled
+                planet SVG, added some mouse jiggle effects, and watched the
+                very computationally taxing magic take place. This effect
+                actually proved to be so taxing that I implemented a frame meter
+                that checks to see if the computer can handle the animation and
+                shuts it off in the first 5 sections if it can not.
+              </sub>
+            </div>
+            <div style="width: 35%" class="apartSectionRight">
+              <img src="../images/fullstack/galaxy.png" height="300px" width="auto"/>
+            </div>
+          </div>
+          <div style="padding-top: 0px" class="apartSection">
+            <div style="width: 35%; margin-right: 20px" class="apartSectionLeft">
+              <img src="../images/fullstack/rocket.png" height="300px" width="auto"/>
+            </div>
+            <div style="width: 65%" class="priorityWhite apartSectionRight">
+              <h6 style="align-self: flex-start"> THE ROCKET </h6>
+              <sub>
+                For the rocket ship, there were three major parts to the
+                implementation one being very noticable, and two being hardly
+                noticeable at all. I will begin with a less noticed one, the
+                first being the perspective trick used for the rocket window.
+                The rocket is actually split into two different components,
+                the window and the body. The body and the window move around
+                the mouse at different rates to simulate perspective from the
+                point of view of the mouse. This was implemented using Tween
+                for movement. Not a very noticeable feature, but still fun.
+                Next, I created the exhaust using a loop of relocating and
+                moving opaque spheres from the location of the rocket ship.
+                Finally, as a small easter-egg-ish feature, I implemented a
+                mouse tracking feature that will make the exhaust become more
+                uncontrollable and more opaque when the mouse is hovered over
+                it. It’s likely that no-one will ever notice this, but I
+                enjoyed it nonetheless.
+              </sub>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="graySection">
+        <div class="paddingWrap">
+          <div class="leftSection">
+            <h3 style="margin-bottom: 30px"> The Execution </h3>
+            <h6>FRONTEND</h6>
+            <sub style="margin-bottom: 20px">
+              The frontend was made using React Native and Redux.js. All icons
+              and images were created by myself using Adobe Illustrator. We
+              decided to give the application a mascot in the form of a spaceman
+              to liven up the design a little bit.
+            </sub>
+            <h6>BACKEND</h6>
+            <sub style="margin-bottom: 20px">
+              For the backend, we decided to initially set up our project with
+              a very light and simple database, Firebase. We also made use of
+              Google Firestore to send real-time notifications of invites and
+              event updates. For search indexing, we made use of the Algolia
+              API and for text messaging we used Twillio.
+            </sub>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <footer class="footerBody">
+      <div class="paddingWrap">
+        <div class="footerContent">
+        <sub style="opacity: 0.5; font-size: 14px">
+          Written and Designed by John Roy © 2019
+        </sub>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -7,9 +7,11 @@ $(window).scroll(function() {
   console.log(Math.max(50-yPos, 0))
 
   // check for work hilight
-  if(yPos > yPoint) {
-    $("#button1").addClass("headerButtonActive");
-  } else {
-    $("#button1").removeClass("headerButtonActive");
+  if ($("#index").length) {
+    if(yPos > yPoint) {
+      $("#button1").addClass("headerButtonActive");
+    } else {
+      $("#button1").removeClass("headerButtonActive");
+    }
   }
 });

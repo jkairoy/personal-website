@@ -9,6 +9,8 @@ $(document).ready(function (){
   $("#button1").click(function (){
     if ($("#index").length) {
       $(window).scrollTop($("#work").offset().top-70);
+    } else if ($("#portfolio").length) {
+      navigate("../index.html");
     } else {
       navigate("index.html");
     }
@@ -17,6 +19,16 @@ $(document).ready(function (){
     $(window).scrollTop($("#work").offset().top-70);
   });
   $("#button2").click(function (){
-    navigate("about.html");
+    if ($("#portfolio").length) {
+      navigate("../about.html");
+    } else {
+      navigate("about.html");
+    }
+  });
+  $("#buttonvenue").click(function (){
+    navigate("portfolio/venue.html");
+  });
+  $("#buttonfullstack").click(function (){
+    navigate("portfolio/fullstack.html");
   });
 });

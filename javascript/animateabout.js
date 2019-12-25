@@ -11,11 +11,8 @@ $(document).ready(function(){
       $('#bioHider').animate({'width': '100%'}, 1000);
     }, 400)
     setTimeout(function(){
-      $('#aboutRight').animate({'opacity': '1'}, 700);
+      $('.profilePhoto').animate({'opacity': '1'}, 700);
     }, 800)
-    setTimeout(function(){
-      $('#bioHider').css({'overflow': 'visible'}, 1000);
-    }, 1500)
   }
   setTimeout(function(){
     $('footer').animate({'opacity': '1'}, 1400);

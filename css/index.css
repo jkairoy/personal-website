@@ -120,6 +120,7 @@ header {
 .paddingWrap {
   width: calc(100vw - 80px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
