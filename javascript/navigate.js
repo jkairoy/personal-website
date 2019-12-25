@@ -31,4 +31,10 @@ $(document).ready(function (){
   $("#buttonfullstack").click(function (){
     navigate("portfolio/fullstack.html");
   });
+  $("#buttontinytodo").click(function (){
+    navigate("portfolio/tinytodo.html");
+  });
+  $("#buttonbeenthere").click(function (){
+    navigate("portfolio/beenthere.html");
+  });
 });
