@@ -28,6 +28,9 @@ $(document).ready(function (){
   $("#buttonvenue").click(function (){
     navigate("portfolio/venue.html");
   });
+  $("#buttonaudioalpaca").click(function (){
+    navigate("portfolio/audioalpaca.html");
+  });
   $("#buttonfullstack").click(function (){
     navigate("portfolio/fullstack.html");
   });
