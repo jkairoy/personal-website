@@ -127,6 +127,11 @@ sub {
   z-index: 1;
 }
 
+.priorityGray {
+  background-color: #F8F9FB;
+  z-index: 1;
+}
+
 .descriptionRow {
   display: flex;
   flex-direction: row;
