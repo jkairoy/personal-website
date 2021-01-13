@@ -1,0 +1,129 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script type="text/javascript" src="/javascript/navigate.js"></script>
+<script type="text/javascript" src="/javascript/animateproject.js"></script>
+<script type="text/javascript" src="/javascript/header.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/uby0rot.css">
+<head>
+    <meta name=viewport content='width=700'>
+    <link rel="stylesheet" type="text/css" href="/css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <title> Johnny Roy </title>
+    <link rel="icon" type="image/png" href="/images/shebang.png">
+</head>
+<body>
+<span id="portfolio"></span>
+<header>
+    <div class="header">
+        <div id="headerHider" class="hider">
+            <button class="headerButton" id="button1">
+                Work
+            </button>
+            <button class="headerButton" id="button2">
+                About
+            </button>
+            <a href="mailto:jkairoy@gmail.com" class="headerButton" id="button3">
+                Contact
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="titleSection">
+    <div>
+        <div id="titleHider" class="hider">
+            <h1>
+                Tiny Todo
+            </h1>
+        </div>
+        <div id="title2Hider" class="hider">
+            <sub>
+                
+                
+                DESKTOP APPLICATION ENGINEERING
+                
+            </sub>
+        </div>
+        <div id="title3Hider" class="hider">
+            <div class="projectDescription">
+                Creating a todo app that cuts out the hassle by organizing your work for you
+            </div>
+        </div>
+        <div id="title4Hider" class="hider">
+            <div class="descriptionRow">
+                
+                <div class="discreteList" style="margin-right: 10px">
+                    <h4>TECH</h4>
+                    
+                    React.js
+                    
+                    Electron
+                    
+                </div>
+                
+                
+                
+                <div class="discreteList" style="margin-right: 10px">
+                    <h4>TEAM</h4>
+                    1 Full Stack Engineer (Me)
+                </div>
+                
+                <div class="discreteList" style="margin-right: 10px">
+                    <h4>WHEN</h4>
+                    February 2019 (1 week)
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <img id="introPicture" class="projectImage" src="https://johnkroy.com/projects/tiny-todo/thumbnail.png"/>
+    
+</section>
+
+<section>
+<h3 id="the-goal">The Goal</h3>
+<p>To quickly learn about developing for desktop with Electron while making a useful todo app</p>
+</section>
+<section>
+<h3 id="the-design">The Design</h3>
+<article>
+<p>The main idea behind TinyTodo was that you should be able to write down nearly anything you have to do, and TinyTodo
+would know how to sort your items for maximum mental clarity. I saw this being best achieved through the recognition of
+dates and times, and by allowing users to input priority (i.e. #2). I decided that these functions should be made clear
+to the users intuitively, and thus I decided to implement text highlighting on application recognition of certain
+strings. Finally, I decided to have a “done” list that todo items would be moved to after completion. I saw this as
+having two functions, giving the user the option to undo an accidental click, and allowing users to see how many items
+they have completed, making the application a bit more satisfying to use.</p>
+<aside>
+<p><img src="singletab.png" alt="Example warning"></p>
+</aside>
+</article>
+</section>
+<section>
+<h3 id="the-execution">The Execution</h3>
+<p>The execution of the app was fairly simple, the most challenging part being accounting for all of the parsable strings.
+Standard Javascript regex was used to recognize appropriate strings and combinations of strings and thus assign priority
+numbers to them. In general, this algorithm prioritized date first and user assigned importance over time differences
+less than a day ahead. If you want to check this out in more detail, view
+my <a href="https://github.com/jkairoy/tinytodo">github project</a>.</p>
+</section>
+<section>
+<h3 id="takeaways">Takeaways</h3>
+<p>This project was definitely a worthwhile exploration into the capabilities of Electron and it surely opened the door to
+many projects to come. It was also a valuable experiment in responding to user feedback as I was able to iterate the
+application as my friends gave me their insights.</p>
+</section>
+
+
+<footer class="footerBody">
+    <div class="paddingWrap">
+        <div class="footerContent">
+            <sub style="opacity: 0.5; font-size: 14px">
+                Written and Designed by John Roy © 2019
+            </sub>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

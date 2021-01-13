@@ -1,0 +1,120 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script type="text/javascript" src="/javascript/navigate.js"></script>
+<script type="text/javascript" src="/javascript/animateproject.js"></script>
+<script type="text/javascript" src="/javascript/header.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/uby0rot.css">
+<head>
+    <meta name=viewport content='width=700'>
+    <link rel="stylesheet" type="text/css" href="/css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <title> Johnny Roy </title>
+    <link rel="icon" type="image/png" href="/images/shebang.png">
+</head>
+<body>
+<span id="portfolio"></span>
+<header>
+    <div class="header">
+        <div id="headerHider" class="hider">
+            <button class="headerButton" id="button1">
+                Work
+            </button>
+            <button class="headerButton" id="button2">
+                About
+            </button>
+            <a href="mailto:jkairoy@gmail.com" class="headerButton" id="button3">
+                Contact
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="titleSection">
+    <div>
+        <div id="titleHider" class="hider">
+            <h1>
+                Brown API
+            </h1>
+        </div>
+        <div id="title2Hider" class="hider">
+            <sub>
+                
+                
+                API DEVELOPMENT
+                
+            </sub>
+        </div>
+        <div id="title3Hider" class="hider">
+            <div class="projectDescription">
+                Reopening the landscape of application development for Brown University with a new API
+            </div>
+        </div>
+        <div id="title4Hider" class="hider">
+            <div class="descriptionRow">
+                
+                <div class="discreteList" style="margin-right: 10px">
+                    <h4>TECH</h4>
+                    
+                    Python (Flask)
+                    
+                </div>
+                
+                
+                
+                <div class="discreteList" style="margin-right: 10px">
+                    <h4>TEAM</h4>
+                    1 Full Stack Engineer (Me)
+                </div>
+                
+                <div class="discreteList" style="margin-right: 10px">
+                    <h4>WHEN</h4>
+                    March 2020 (2 Weeks)
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <img id="introPicture" class="projectImage" src="https://johnkroy.com/projects/brown-api/thumbnail.png"/>
+    
+</section>
+
+<section>
+<h3 id="the-problem">The Problem</h3>
+<p>Brown University previously had a student-maintained API to give quick access to real-time laundry and dining data.
+However, the developers graduated and the repository sunk into deprecation as the websites they sourced their data from
+changed.</p>
+</section>
+<section>
+<h3 id="the-goal">The Goal</h3>
+<p>To reboot the Brown API, fixing it and making it more efficient, modular, and readable</p>
+</section>
+<section>
+<h3 id="the-execution">The Execution</h3>
+<p>I began with a fork of the original Brown API repository and found that there were several problems. First, the data was
+stored non-relationally and nested in messy, hard to reach objects. Moreover, I found that the dining API was slow and
+scraped directly from the HTML of the Brown University dining site instead of using public, though hard to find,
+endpoints provided by our catering company. Similarly, the laundry endpoint was structured to scrape from the website
+rather than the public API.</p>
+<p>To fix these issues, I first restructured to a Postgres database. I then rebuilt the scraping and data collection
+systems to pull from the faster and more consistent aforementioned public endpoints. Finally, I slapped a new frontend
+on the site to give documentation, and I was finished.</p>
+</section>
+<section>
+<h3 id="takeaways">Takeaways</h3>
+<p>This project was an interesting foray into building a public API and learning to manage public user credentials. If you
+feel compelled, <a href="http://api.cs.brown.edu/">check out the API here</a>!</p>
+</section>
+
+
+<footer class="footerBody">
+    <div class="paddingWrap">
+        <div class="footerContent">
+            <sub style="opacity: 0.5; font-size: 14px">
+                Written and Designed by John Roy © 2019
+            </sub>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

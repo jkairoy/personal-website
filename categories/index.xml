@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on My New Hugo Site</title>
+    <link>https://johnkroy.com/categories/</link>
+    <description>Recent content in Categories on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>john_roy1@brown.edu (Johnny Roy)</managingEditor>
+    <webMaster>john_roy1@brown.edu (Johnny Roy)</webMaster><atom:link href="https://johnkroy.com/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

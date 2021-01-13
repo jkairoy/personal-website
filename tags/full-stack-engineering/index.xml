@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FULL STACK ENGINEERING on My New Hugo Site</title>
+    <link>https://johnkroy.com/tags/full-stack-engineering/</link>
+    <description>Recent content in FULL STACK ENGINEERING on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>john_roy1@brown.edu (Johnny Roy)</managingEditor>
+    <webMaster>john_roy1@brown.edu (Johnny Roy)</webMaster><atom:link href="https://johnkroy.com/tags/full-stack-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Been There</title>
+      <link>https://johnkroy.com/projects/been-there/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>john_roy1@brown.edu (Johnny Roy)</author>
+      <guid>https://johnkroy.com/projects/been-there/</guid>
+      <description>The Goal To help Brown organizations by giving them access to high-quality web applications developed by Brown students while giving brown students the opportunity to improve their practical skills by developing useful applications
+  The Design  We felt that the best way for messages like this to be communicated was through a message-board-esque design, where posts could be made, found, and commented on. We wanted to avoid triggering our users at all costs, thus, we gave the option to include possibly triggering topics, which would essentially sensor the post until a confirmation had been given.</description>
+    </item>
+    
+    <item>
+      <title>Venue</title>
+      <link>https://johnkroy.com/projects/venue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>john_roy1@brown.edu (Johnny Roy)</author>
+      <guid>https://johnkroy.com/projects/venue/</guid>
+      <description>The Goal To create a platform for people to organize get togethers and fun events as well as connect to others based on mutual event attendance
+  The Design  The application as we saw it, would have two major functions, to host your own events and manage them through the app, and to connect with others through mutual attendance. We saw the best way to implement the attendance aspect of this as being a system that would let you browse events freely, sorted based on a number of elements such as proximity, friend attendance, and date.</description>
+    </item>
+    
+  </channel>
+</rss>

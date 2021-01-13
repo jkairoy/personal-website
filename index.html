@@ -1,247 +1,268 @@
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-<script type="text/javascript" src="javascript/animatehome.js"></script>
-<script type="text/javascript" src="javascript/blob.js"></script>
-<script type="text/javascript" src="javascript/header.js"></script>
-<script type="text/javascript" src="javascript/navigate.js"></script>
+<script type="text/javascript" src="/javascript/animatehome.js"></script>
+<script type="text/javascript" src="/javascript/blob.js"></script>
+<script type="text/javascript" src="/javascript/header.js"></script>
+<script type="text/javascript" src="/javascript/navigate.js"></script>
 <link rel="stylesheet" href="https://use.typekit.net/uby0rot.css">
 <head>
-  <meta name=viewport content='width=700'>
-  <link rel="stylesheet" type="text/css" href="css/index.css">
-  <link rel="stylesheet" type="text/css" href="css/home.css">
-  <title> John Roy </title>
-  <link rel="icon" type="image/png" href="images/shebang.png">
+	<meta name="generator" content="Hugo 0.77.0" />
+    <meta name=viewport content='width=700'>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <title> Johnny Roy </title>
+    <link rel="icon" type="image/png" href="/images/shebang.png">
 </head>
 <body>
-  <span id="index"> </span>
-  <header>
+<span id="index"> </span>
+<header>
     <div class="header">
-      <div id="headerHider" class="hider">
-        <button class="headerButton" id="button1">
-          Work
-        </button>
-        <button class="headerButton" id="button2">
-          About
-        </button>
-        <a href="mailto:jkairoy@gmail.com" class="headerButton" id="button3">
-          Contact
-        </a>
-      </div>
+        <div id="headerHider" class="hider">
+            <button class="headerButton" id="button1">
+                Work
+            </button>
+            <button class="headerButton" id="button2">
+                About
+            </button>
+            <a href="mailto:jkairoy@gmail.com" class="headerButton" id="button3">
+                Contact
+            </a>
+        </div>
     </div>
-  </header>
-  <div class="content">
+</header>
+
+<div class="content">
     <div class="paddingWrap">
-      <section class="introSlide">
-        <div>
-          <div class="hider" id="introTitleHider">
-            <h1>
-              Hi, I'm Johnny Roy
-            </h1>
-          </div>
-          <div class="hider" id="introDescriptionHider">
+        <section class="introSlide">
             <div>
-              <div style="margin-bottom: 4px">
-                Software engineer and HCI researcher
-              </div>
-              <div>
-                Studying Computer Science at Brown University
-              </div>
+                <div class="hider" id="introTitleHider">
+                    <h1>
+                        Hi, I'm Johnny Roy
+                    </h1>
+                </div>
+                <div class="hider" id="introDescriptionHider">
+                    <div class="summary" style="margin-bottom: 4px">
+                        Software Engineer and HCI Researcher Studying Computer Science at Brown University
+                    </div>
+                </div>
+                <div id="arrow" class="arrowContainer">
+                    <span class="arrowStem"></span>
+                    <div>
+                        <span class="arrowTip"> </span>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div id="arrow" class="arrowContainer">
-            <span class="arrowStem"></span>
-            <div>
-            <span class="arrowTip"> </span>
+            <div class="landingImageContainer">
+                <img id="meflat" src="images/meflat.svg" height="350" width="auto" style="opacity: 0"/>
+                <img id="float" src="images/float.svg" class="floatImage" height="350" width="auto" style="opacity: 0"/>
+                <img id="blob" src="images/blob.svg" class="blobImage" height="465" width="auto" style="opacity: 0"/>
+                <img id="shadow" src="images/shadow.svg" class="shadowImage" height="350px" width="auto"
+                     style="opacity: 0"/>
             </div>
-          </div>
-        </div>
-        <div class="landingImageContainer">
-          <img id="meflat" src="images/meflat.svg" height="350" width="auto" style="opacity: 0" />
-          <img id="float" src="images/float.svg" class="floatImage" height="350" width="auto" style="opacity: 0" />
-          <img id="blob" src="images/blob.svg" class="blobImage" height="465" width="auto" style="opacity: 0" />
-          <img id="shadow" src="images/shadow.svg" class="shadowImage" height="350px" width="auto" style="opacity: 0" />
-        </div>
-      </section>
+        </section>
     </div>
     <section id="work" class="workSection">
-      <div class="workSlideGray">
-        <div class="workInnerContainer">
-          <div class="workShiftedContinerGray">
-            <sub>
-              FULL STACK ENGINEERING
-            </sub>
-            <h2>
-              Audio Alpaca
-            </h2>
-            <div>
-              Making music composition in Logic Pro X faster with quick audio file formatting
+        
+        <div class="workSlide">
+            <div class="workInnerContainer">
+                <div class="workShiftedContainer">
+                    <h4>
+                        
+                        
+                        DESKTOP APPLICATION ENGINEERING
+                        
+                    </h4>
+                    <h2>
+                        Audio Alpaca
+                    </h2>
+                    <div>
+                        Making music composition in Logic Pro X faster with quick audio file formatting
+                    </div>
+                    <div class="tag">
+                        Personal Project
+                    </div>
+                    <a href="https://johnkroy.com/projects/audio-alpaca/" class="seeMore">See More</a>
+                </div>
             </div>
-            <div class="tag">
-              Personal Project
-            </div>
-            <button id="buttonaudioalpaca" class="seeMore"> See More </a>
-          </div>
+            
+            <img class="projectImage" src="https://johnkroy.com/projects/audio-alpaca/thumbnail.png" style="right: 0; height: 380px"/>
+            
         </div>
-        <img class="projectImage" src="images/audioalpaca.png" style="height: 400px; right: 80px"/>
-      </div>
-      <div class="workSlideWhite">
-        <div class="workInnerContainer">
-          <div class="workShiftedContinerWhite">
-            <sub>
-              API DEVELOPMENT
-            </sub>
-            <h2>
-              Brown API
-            </h2>
-            <div>
-              Reopening the landscape of application development for Brown
-              University with a new API
+        
+        <div class="workSlide">
+            <div class="workInnerContainer">
+                <div class="workShiftedContainer">
+                    <h4>
+                        
+                        
+                        FULL STACK ENGINEERING
+                        
+                    </h4>
+                    <h2>
+                        Been There
+                    </h2>
+                    <div>
+                        Helping trauma victims find their voice with an anonymous network based off of one way communication
+                    </div>
+                    <div class="tag">
+                        Personal Project
+                    </div>
+                    <a href="https://johnkroy.com/projects/been-there/" class="seeMore">See More</a>
+                </div>
             </div>
-            <div class="tag">
-              Personal Project
-            </div>
-            <button id="buttonbrownapi" class="seeMore"> See More </a>
-          </div>
+            
+            <img class="projectImage" src="https://johnkroy.com/projects/been-there/thumbnail.png" style="right: 0; height: 380px"/>
+            
         </div>
-        <img class="projectImage" src="images/brownapi.png" style="height: 400px; right: 50px"/>
-      </div>
-      <div class="workSlideGray">
-        <div class="workInnerContainer">
-          <div class="workShiftedContinerGray">
-            <sub>
-              WEB DEVELOPMENT / ORGANIZATION
-            </sub>
-            <h2>
-              Full Stack at Brown
-            </h2>
-            <div>
-              Founding and leading a club to spread web technology and
-              design philosophies
+        
+        <div class="workSlide">
+            <div class="workInnerContainer">
+                <div class="workShiftedContainer">
+                    <h4>
+                        
+                        
+                        API DEVELOPMENT
+                        
+                    </h4>
+                    <h2>
+                        Brown API
+                    </h2>
+                    <div>
+                        Reopening the landscape of application development for Brown University with a new API
+                    </div>
+                    <div class="tag">
+                        Personal Project
+                    </div>
+                    <a href="https://johnkroy.com/projects/brown-api/" class="seeMore">See More</a>
+                </div>
             </div>
-            <div class="tag">
-              School Affiliated Club
-            </div>
-            <button id="buttonfullstack" class="seeMore"> See More </a>
-          </div>
+            
+            <img class="projectImage" src="https://johnkroy.com/projects/brown-api/thumbnail.png" style="right: 0; height: 380px"/>
+            
         </div>
-        <img class="projectImage" src="images/fullstack.png"/>
-      </div>
-      <div class="workSlideWhite">
-        <div class="workInnerContainer">
-          <div class="workShiftedContinerWhite">
-            <sub>
-              DESKTOP APPLICATION ENGINEERING
-            </sub>
-            <h2>
-              Tiny Todo
-            </h2>
-            <div>
-              Creating a todo app that cuts out the hassle by organizing
-              your work for you
+        
+        <div class="workSlide">
+            <div class="workInnerContainer">
+                <div class="workShiftedContainer">
+                    <h4>
+                        
+                        
+                        WEB DEVELOPMENT
+                        
+                         / 
+                        ORGANIZATION
+                        
+                    </h4>
+                    <h2>
+                        Full Stack at Brown
+                    </h2>
+                    <div>
+                        Founding and leading a club to spread web technology and design philosophies
+                    </div>
+                    <div class="tag">
+                        School Affiliated Club
+                    </div>
+                    <a href="https://johnkroy.com/projects/full-stack-at-brown/" class="seeMore">See More</a>
+                </div>
             </div>
-            <div class="tag">
-              Personal Project
-            </div>
-            <button id="buttontinytodo" class="seeMore"> See More </a>
-          </div>
+            
+            <img class="projectImage" src="https://johnkroy.com/projects/full-stack-at-brown/thumbnail.png" style="right: 0; height: 380px"/>
+            
         </div>
-        <img class="projectImage" src="images/tinytodo.png" />
-      </div>
-      <div class="workSlideGray">
-        <div class="workInnerContainer">
-          <div class="workShiftedContinerGray">
-            <sub>
-              FULL STACK ENGINEERING
-            </sub>
-            <h2>
-              Been There
-            </h2>
-            <div>
-              Helping trauma victims find their voice with an anonymous
-              network based off of one way communication
+        
+        <div class="workSlide">
+            <div class="workInnerContainer">
+                <div class="workShiftedContainer">
+                    <h4>
+                        
+                        
+                        AUGMENTED REALITY
+                        
+                         / 
+                        IIOT
+                        
+                    </h4>
+                    <h2>
+                        Nordson
+                    </h2>
+                    <div>
+                        Optimizing assembly lines with The Internet of Things and Augmented Reality
+                    </div>
+                    <div class="tag">
+                        Summer Internship
+                    </div>
+                    <a href="https://johnkroy.com/projects/nordson/" class="seeMore">See More</a>
+                </div>
             </div>
-            <div class="tag">
-              Personal Project
-            </div>
-            <button id="buttonbeenthere" class="seeMore"> See More </a>
-          </div>
+            
+            <img class="projectImage" src="https://johnkroy.com/projects/nordson/thumbnail.png" style="right: 0; height: 380px"/>
+            
         </div>
-        <img class="projectImage" src="images/beenthere.png" style="right: 0; height: 380px"/>
-      </div>
-      <div class="workSlideWhite">
-        <div class="workInnerContainer">
-          <div class="workShiftedContinerWhite">
-            <sub>
-              UI/UX DESIGN
-            </sub>
-            <h2>
-              MylkGuys Mobile App
-            </h2>
-            <div>
-              Designing and testing a prototyped mobile application design
-              for grocery startup MylkGuys
+        
+        <div class="workSlide">
+            <div class="workInnerContainer">
+                <div class="workShiftedContainer">
+                    <h4>
+                        
+                        
+                        DESKTOP APPLICATION ENGINEERING
+                        
+                    </h4>
+                    <h2>
+                        Tiny Todo
+                    </h2>
+                    <div>
+                        Creating a todo app that cuts out the hassle by organizing your work for you
+                    </div>
+                    <div class="tag">
+                        Personal Project
+                    </div>
+                    <a href="https://johnkroy.com/projects/tiny-todo/" class="seeMore">See More</a>
+                </div>
             </div>
-            <div class="tag">
-              Class Work
-            </div>
-            <button id="buttonmylkguys" class="seeMore"> See More </a>
-          </div>
+            
+            <img class="projectImage" src="https://johnkroy.com/projects/tiny-todo/thumbnail.png" style="right: 0; height: 380px"/>
+            
         </div>
-        <img class="projectImage" src="images/mylk1.png" />
-      </div>
-      <div class="workSlideGray">
-        <div class="workInnerContainer">
-          <div class="workShiftedContinerGray">
-            <sub>
-              AUGMENTED REALITY / IIOT
-            </sub>
-            <h2>
-              Nordson
-            </h2>
-            <div>
-              Optimizing assembly lines with The Internet of Things and
-              Augmented Reality
+        
+        <div class="workSlide">
+            <div class="workInnerContainer">
+                <div class="workShiftedContainer">
+                    <h4>
+                        
+                        
+                        FULL STACK ENGINEERING
+                        
+                    </h4>
+                    <h2>
+                        Venue
+                    </h2>
+                    <div>
+                        Bringing communities together with an event based social media application
+                    </div>
+                    <div class="tag">
+                        Personal Project
+                    </div>
+                    <a href="https://johnkroy.com/projects/venue/" class="seeMore">See More</a>
+                </div>
             </div>
-            <div class="tag">
-              Summer Internship
-            </div>
-            <button id="buttonnordson" class="seeMore"> See More </a>
-          </div>
+            
+            <img class="projectImage" src="https://johnkroy.com/projects/venue/thumbnail.png" style="right: 0; height: 380px"/>
+            
         </div>
-        <img class="projectImage" src="images/nordson.png" style="height: 300px"/>
-      </div>
-      <div class="workSlideWhite">
-        <div class="workInnerContainer">
-          <div class="workShiftedContinerWhite">
-            <sub>
-              FULL STACK ENGINEERING
-            </sub>
-            <h2>
-              Venue
-            </h2>
-            <div>
-              Bringing communities together with an event based social media
-              application
-            </div>
-            <div class="tag">
-              Personal Project
-            </div>
-            <button id="buttonvenue" class="seeMore"> See More </a>
-          </div>
-        </div>
-        <img class="projectImage" src="images/venue.png" style="height: 400px; right: 150px"/>
-      </div>
+        
     </section>
     <footer class="footerBody">
-      <div class="paddingWrap">
+    <div class="paddingWrap">
         <div class="footerContent">
-        <sub style="opacity: 0.5; font-size: 14px">
-          Written and Designed by John Roy © 2019
-        </sub>
+            <sub style="opacity: 0.5; font-size: 14px">
+                Written and Designed by John Roy © 2019
+            </sub>
         </div>
-      </div>
-    </footer>
-  </div>
+    </div>
+</footer>
+
+</div>
 </body>
 </html>

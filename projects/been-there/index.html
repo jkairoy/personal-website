@@ -1,0 +1,148 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script type="text/javascript" src="/javascript/navigate.js"></script>
+<script type="text/javascript" src="/javascript/animateproject.js"></script>
+<script type="text/javascript" src="/javascript/header.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/uby0rot.css">
+<head>
+    <meta name=viewport content='width=700'>
+    <link rel="stylesheet" type="text/css" href="/css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <title> Johnny Roy </title>
+    <link rel="icon" type="image/png" href="/images/shebang.png">
+</head>
+<body>
+<span id="portfolio"></span>
+<header>
+    <div class="header">
+        <div id="headerHider" class="hider">
+            <button class="headerButton" id="button1">
+                Work
+            </button>
+            <button class="headerButton" id="button2">
+                About
+            </button>
+            <a href="mailto:jkairoy@gmail.com" class="headerButton" id="button3">
+                Contact
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="titleSection">
+    <div>
+        <div id="titleHider" class="hider">
+            <h1>
+                Been There
+            </h1>
+        </div>
+        <div id="title2Hider" class="hider">
+            <sub>
+                
+                
+                FULL STACK ENGINEERING
+                
+            </sub>
+        </div>
+        <div id="title3Hider" class="hider">
+            <div class="projectDescription">
+                Helping trauma victims find their voice with an anonymous network based off of one way communication
+            </div>
+        </div>
+        <div id="title4Hider" class="hider">
+            <div class="descriptionRow">
+                
+                <div class="discreteList" style="margin-right: 10px">
+                    <h4>TECH</h4>
+                    
+                    React.js
+                    
+                    D3
+                    
+                    MongoDB
+                    
+                    Node.js
+                    
+                </div>
+                
+                
+                
+                <div class="discreteList" style="margin-right: 10px">
+                    <h4>TEAM</h4>
+                    2 Full Stack Engineers, Yusuf Karim and Myself
+                </div>
+                
+                <div class="discreteList" style="margin-right: 10px">
+                    <h4>WHEN</h4>
+                    August 2019 (2 Days)
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <img id="introPicture" class="projectImage" src="https://johnkroy.com/projects/been-there/thumbnail.png"/>
+    
+</section>
+
+<section>
+<h3 id="the-goal">The Goal</h3>
+<p>To help Brown organizations by giving them access to high-quality web applications developed by Brown students while
+giving brown students the opportunity to improve their practical skills by developing useful applications</p>
+</section>
+<section>
+<h3 id="the-design">The Design</h3>
+<article>
+<p>We felt that the best way for messages like this to be communicated was through a message-board-esque design, where
+posts could be made, found, and commented on. We wanted to avoid triggering our users at all costs, thus, we gave the
+option to include possibly triggering topics, which would essentially sensor the post until a confirmation had been
+given.</p>
+<aside>
+<p><img src="images/warning.png" alt="Example warning"></p>
+</aside>
+</article>
+<article>
+<aside>
+<p><img src="images/post.png" alt="Example warning"></p>
+</aside>
+<p>The most important thing to our team was to make sure that our website was a safe space where victims could not be
+exploited. Thus, we chose to make communication only possible in one direction to protect users from grooming.</p>
+</article>
+<article>
+<p>We believed that it was also essential to give users instant feedback and affirmation after their post had been made,
+thus, if the user opted in, using our tag system, we were able to show our user an animated bubble graph of stories
+similar to theirs immediately after posting.</p>
+<aside>
+<p><img src="images/bubbles.png" alt="Example warning"></p>
+</aside>
+</article>
+</section>
+<section>
+<h3 id="the-execution">The Execution</h3>
+<h4 id="frontend">FRONTEND</h4>
+<p>The frontend was made using React.js and D3 for the post visualization.</p>
+<h4 id="backend">BACKEND</h4>
+<p>The backend was a very simple NoSQL implementation enabled by MongoDB cloud hosting with client data transfer
+facilitated by Node.js</p>
+</section>
+<section>
+<h3 id="takeaways">Takeaways</h3>
+<p>This short project was a valuable exploration into the power of data visualization in UX design. Data is powerful, but
+without the proper layout, it is essentially meaningless. Moreover, this was a great experience in user feedback and in
+creating a product off of user narrative, as we were able to talk to several trauma victims personally, which profoundly
+impacted the direction of our design. The project is hosted <a href="https:~~~~//ivebeentheretoo.herokuapp.com/">here</a> if you would
+like to take a look.</p>
+</section>
+
+
+<footer class="footerBody">
+    <div class="paddingWrap">
+        <div class="footerContent">
+            <sub style="opacity: 0.5; font-size: 14px">
+                Written and Designed by John Roy © 2019
+            </sub>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

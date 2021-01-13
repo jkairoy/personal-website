@@ -2,11 +2,17 @@ html {
   font-family: sans-serif;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 a {
   text-decoration:none;
-  color: inherit;
+}
+
+p {
+  font-size: 16px;
 }
 
 button {
@@ -27,7 +33,6 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 h1 {
@@ -41,12 +46,19 @@ h2 {
   font-weight: 400;
 }
 
-div {
-  font-size: 20px;
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 15px;
+  margin: 0;
+  opacity: 0.7;
   font-weight: lighter;
 }
 
 header {
+  top: 0;
   z-index: 100;
   width: 100%;
   background-color: white;
@@ -57,6 +69,12 @@ header {
   position: fixed;
   padding-top: 50px;
   height: 80px;
+}
+
+.summary {
+  min-width: 420px;
+  max-width: 420px;
+  white-space: normal;
 }
 
 .content {

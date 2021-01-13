@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on My New Hugo Site</title>
+    <link>https://johnkroy.com/tags/</link>
+    <description>Recent content in Tags on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>john_roy1@brown.edu (Johnny Roy)</managingEditor>
+    <webMaster>john_roy1@brown.edu (Johnny Roy)</webMaster><atom:link href="https://johnkroy.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>API DEVELOPMENT</title>
+      <link>https://johnkroy.com/tags/api-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>john_roy1@brown.edu (Johnny Roy)</author>
+      <guid>https://johnkroy.com/tags/api-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AUGMENTED REALITY</title>
+      <link>https://johnkroy.com/tags/augmented-reality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>john_roy1@brown.edu (Johnny Roy)</author>
+      <guid>https://johnkroy.com/tags/augmented-reality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Desktop Application Engineering</title>
+      <link>https://johnkroy.com/tags/desktop-application-engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>john_roy1@brown.edu (Johnny Roy)</author>
+      <guid>https://johnkroy.com/tags/desktop-application-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FULL STACK ENGINEERING</title>
+      <link>https://johnkroy.com/tags/full-stack-engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>john_roy1@brown.edu (Johnny Roy)</author>
+      <guid>https://johnkroy.com/tags/full-stack-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IIOT</title>
+      <link>https://johnkroy.com/tags/iiot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>john_roy1@brown.edu (Johnny Roy)</author>
+      <guid>https://johnkroy.com/tags/iiot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Organization</title>
+      <link>https://johnkroy.com/tags/organization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>john_roy1@brown.edu (Johnny Roy)</author>
+      <guid>https://johnkroy.com/tags/organization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Development</title>
+      <link>https://johnkroy.com/tags/web-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>john_roy1@brown.edu (Johnny Roy)</author>
+      <guid>https://johnkroy.com/tags/web-development/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
